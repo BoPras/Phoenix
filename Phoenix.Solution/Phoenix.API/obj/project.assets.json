@@ -2519,11 +2519,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1902\\Documents\\Phoenix\\Phoenix.Solution\\Phoenix.API\\Phoenix.API.csproj",
+      "projectUniqueName": "C:\\Users\\1902\\Documents\\GitHub-BoPras\\Phoenix\\Phoenix.Solution\\Phoenix.API\\Phoenix.API.csproj",
       "projectName": "Phoenix.API",
-      "projectPath": "C:\\Users\\1902\\Documents\\Phoenix\\Phoenix.Solution\\Phoenix.API\\Phoenix.API.csproj",
+      "projectPath": "C:\\Users\\1902\\Documents\\GitHub-BoPras\\Phoenix\\Phoenix.Solution\\Phoenix.API\\Phoenix.API.csproj",
       "packagesPath": "C:\\Users\\1902\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1902\\Documents\\Phoenix\\Phoenix.Solution\\Phoenix.API\\obj\\",
+      "outputPath": "C:\\Users\\1902\\Documents\\GitHub-BoPras\\Phoenix\\Phoenix.Solution\\Phoenix.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\1902\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2540,8 +2540,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\1902\\Documents\\Phoenix\\Phoenix.Solution\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\1902\\Documents\\Phoenix\\Phoenix.Solution\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\1902\\Documents\\GitHub-BoPras\\Phoenix\\Phoenix.Solution\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\1902\\Documents\\GitHub-BoPras\\Phoenix\\Phoenix.Solution\\DataAccess\\DataAccess.csproj"
             }
           }
         }

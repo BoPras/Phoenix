@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1902\\Documents\\Phoenix\\Phoenix.Solution\\Phoenix.Web\\Phoenix.Web.csproj": {}
+    "C:\\Users\\1902\\Documents\\GitHub-BoPras\\Phoenix\\Phoenix.Solution\\Phoenix.Web\\Phoenix.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1902\\Documents\\Phoenix\\Phoenix.Solution\\Phoenix.Web\\Phoenix.Web.csproj": {
+    "C:\\Users\\1902\\Documents\\GitHub-BoPras\\Phoenix\\Phoenix.Solution\\Phoenix.Web\\Phoenix.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1902\\Documents\\Phoenix\\Phoenix.Solution\\Phoenix.Web\\Phoenix.Web.csproj",
+        "projectUniqueName": "C:\\Users\\1902\\Documents\\GitHub-BoPras\\Phoenix\\Phoenix.Solution\\Phoenix.Web\\Phoenix.Web.csproj",
         "projectName": "Phoenix.Web",
-        "projectPath": "C:\\Users\\1902\\Documents\\Phoenix\\Phoenix.Solution\\Phoenix.Web\\Phoenix.Web.csproj",
+        "projectPath": "C:\\Users\\1902\\Documents\\GitHub-BoPras\\Phoenix\\Phoenix.Solution\\Phoenix.Web\\Phoenix.Web.csproj",
         "packagesPath": "C:\\Users\\1902\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1902\\Documents\\Phoenix\\Phoenix.Solution\\Phoenix.Web\\obj\\",
+        "outputPath": "C:\\Users\\1902\\Documents\\GitHub-BoPras\\Phoenix\\Phoenix.Solution\\Phoenix.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\1902\\AppData\\Roaming\\NuGet\\NuGet.Config",

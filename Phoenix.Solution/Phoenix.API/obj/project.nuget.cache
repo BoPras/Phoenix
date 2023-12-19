@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r8/7U89D6kg3rpkBiWiKx3FAMgYydNtx/8JPE7FG6VD2d8Mm3NWXtTTDQAAaBMg+K1/DG0+T7dOjQABBuX6FpQ==",
+  "dgSpecHash": "5Ezt2ttUXuy4gFGWTdXQVhTlISH/9O716ITSsK1GiMxYb5vTskcSYFepCoQC/nyg0EOFjLREx6F6a1RBqA5Now==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1902\\Documents\\Phoenix\\Phoenix.Solution\\Phoenix.API\\Phoenix.API.csproj",
+  "projectFilePath": "C:\\Users\\1902\\Documents\\GitHub-BoPras\\Phoenix\\Phoenix.Solution\\Phoenix.API\\Phoenix.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\1902\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\1902\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

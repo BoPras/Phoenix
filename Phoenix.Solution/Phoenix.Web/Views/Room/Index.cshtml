@@ -1,0 +1,35 @@
+﻿@using Phoenix.Web.Models.Room;
+@model RoomViewModel;
+@{
+    ViewData["Title"] = "Room";
+}
+
+<div>
+    <h1>ROOMS</h1>
+    @if (!string.IsNullOrEmpty(ViewBag.Error))
+    {
+        <span>@ViewBag.Error</span>
+    }
+
+    @if (ViewData["Rooms"] != null)
+    {
+        var rooms = ViewData["Rooms"] as List<RoomViewModel>; // Assuming Room is your model class
+
+        <ul>
+            @foreach (var room in rooms)
+            {
+                <li>Room Number: @room.Number </li>
+                <li>Floor: @room.Floor </li>
+                <li>Room Type: @room.Room_type </li>
+                <li>Guest Limit: @room.Guest_Limit </li>
+                <li>Cost: @room.Cost </li>
+                <li>==================</li>
+                <!-- Adjust the properties according to your Room model -->
+            }
+        </ul>
+    }
+    else
+    {
+        <span>No rooms available</span>
+    }
+</div>

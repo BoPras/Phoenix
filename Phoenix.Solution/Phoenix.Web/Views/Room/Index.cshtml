@@ -4,32 +4,43 @@
     ViewData["Title"] = "Room";
 }
 
-<div>
-    <h1>ROOMS</h1>
-    @if (!string.IsNullOrEmpty(ViewBag.Error))
-    {
-        <span>@ViewBag.Error</span>
-    }
+<div class="grid-container category-index">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th>Room Number</th>
+                <th>Floor</th>
+                <th>Room type</th>
+                <th>Guest Limit</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
 
-    @if (ViewData["Rooms"] != null)
-    {
-        var rooms = ViewData["Rooms"] as List<RoomViewModel>; // Assuming Room is your model class
-
-        <ul>
-            @foreach (var room in rooms)
+            @if (ViewData["Rooms"] != null)
             {
-                <li>Room Number: @room.Number </li>
-                <li>Floor: @room.Floor </li>
-                <li>Room Type: @room.Room_type </li>
-                <li>Guest Limit: @room.Guest_Limit </li>
-                <li>Cost: @room.Cost </li>
-                <li>==================</li>
-                <!-- Adjust the properties according to your Room model -->
+                var rooms = ViewData["Rooms"] as List<RoomViewModel>; // Assuming Room is your model class
+                @foreach (var room in rooms)
+                {
+                    <tr>
+                        <td>
+                            <a data-id="@room.Number" class="btn btn-primary">Edit</a>
+                            <a data-id="@room.Number" class="btn btn-success">Book this</a>
+                            <a data-id="@room.Number" class="btn btn-warning">Delete</a>
+                        </td>
+                        <td>@room.Number</td>
+                        <td>@room.Floor</td>
+                        <td>@room.Room_type</td>
+                        <td>@room.Guest_Limit</td>
+                        <td>@room.Cost.Value.ToString("C")</td>
+                    </tr>
+                }
             }
-        </ul>
-    }
-    else
-    {
-        <span>No rooms available</span>
-    }
+            else
+            {
+                <span>No rooms available</span>
+            }
+        </tbody>
+    </table>
 </div>

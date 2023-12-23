@@ -1,0 +1,55 @@
+﻿@using Phoenix.Web.Models.YuGiOh;
+@model CardViewModel;
+@{
+    ViewData["Title"] = "YuGiOh";
+}
+
+<div class="grid-container category-index">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Desc</th>
+                <th>Race</th>
+                <th>Archetype</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (ViewData["Cards"] != null)
+            {
+                var data = ViewData["Cards"] as CardViewModel;
+                @if (data.Data != null)
+                {
+                    @foreach (var card in data.Data)
+                    {
+                        <tr>
+                            <td>
+                                <a data-id="@card.Id" class="btn btn-primary">Edit</a>
+                                <a data-id="@card.Id" class="btn btn-success">Book this</a>
+                                <a data-id="@card.Id" class="btn btn-warning">Delete</a>
+                            </td>
+                            <td>@card.Id</td>
+                            <td>@card.Name</td>
+                            <td>@card.Type</td>
+                            <td>@card.Desc</td>
+                            <td>@card.Race</td>
+                            <td>@card.Archetype</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>No Card Data</tr>
+                }
+
+            }
+            else
+            {
+                <tr>@ViewBag.Error</tr>
+            }
+        </tbody>
+    </table>
+</div>

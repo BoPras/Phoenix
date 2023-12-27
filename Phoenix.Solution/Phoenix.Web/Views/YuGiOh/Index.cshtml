@@ -4,12 +4,19 @@
     ViewData["Title"] = "YuGiOh";
 }
 
+<style>
+    .card-image-cell img {
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+</style>
 <div class="grid-container category-index">
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th>Action</th>
-                <th>ID</th>
+                <th>Image</th>
                 <th>Name</th>
                 <th>Type</th>
                 <th>Desc</th>
@@ -26,12 +33,12 @@
                     @foreach (var card in data.Data)
                     {
                         <tr>
-                            <td>
-                                <a data-id="@card.Id" class="btn btn-primary">Edit</a>
-                                <a data-id="@card.Id" class="btn btn-success">Book this</a>
-                                <a data-id="@card.Id" class="btn btn-warning">Delete</a>
+                            <td class="card-img-cell" style="max-width:200px">
+                                @if (card.Card_images != null && card.Card_images.Any())
+                                {
+                                    <img src="@card.Card_images[0].Image_Url_Small" alt="card image"/>
+                                }
                             </td>
-                            <td>@card.Id</td>
                             <td>@card.Name</td>
                             <td>@card.Type</td>
                             <td>@card.Desc</td>
@@ -42,13 +49,17 @@
                 }
                 else
                 {
-                    <tr>No Card Data</tr>
+                    <tr>
+                        <td colspan="7">No Card Data</td>
+                    </tr>
                 }
 
             }
             else
             {
-                <tr>@ViewBag.Error</tr>
+                <tr>
+                    <td colspan="7">@ViewBag.Error</td>
+                </tr>
             }
         </tbody>
     </table>

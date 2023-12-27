@@ -11,9 +11,9 @@ namespace Phoenix.Web.Models.YuGiOh
         public string Desc { get; set; }
         public string Race { get; set; }
         public string Archetype { get; set; }
-        public string YgoprodeckUrl { get; set; }
-        public List<CardSet> CardSets { get; set; }
-        public List<CardImage> CardImages { get; set; }
-        public List<CardPrice> CardPrices { get; set; }
+        public string Ygoprodeck_url { get; set; }
+        public List<CardSet> Card_sets { get; set; }
+        public List<CardImage> Card_images { get; set; }
+        public List<CardPrice> Card_Prices { get; set; }
     }
 }

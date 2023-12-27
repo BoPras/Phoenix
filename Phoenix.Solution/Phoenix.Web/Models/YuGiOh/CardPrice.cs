@@ -2,10 +2,10 @@
 {
     public class CardPrice
     {
-        public string CardmarketPrice { get; set; }
-        public string TcgplayerPrice { get; set; }
-        public string EbayPrice { get; set; }
-        public string AmazonPrice { get; set; }
-        public string CoolstuffincPrice { get; set; }
+        public string Cardmarket_Price { get; set; }
+        public string Tcgplayer_Price { get; set; }
+        public string Ebay_Price { get; set; }
+        public string Amazon_Price { get; set; }
+        public string Coolstuffinc_Price { get; set; }
     }
 }
